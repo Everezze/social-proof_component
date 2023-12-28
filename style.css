@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: "League Spartan";
+}
+
+h1,h2,h3,p{
+    margin:0;
+}
+
+main{
+    padding: 5rem 1rem;
+}
+
+p{
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+h1+p{
+    margin: 1.25rem 0 3rem;
+    color: hsl(303, 10%, 53%);
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+em{
+    font-style:normal;
+    font-weight: 700;
+    display: block;
+    margin-top: 1rem;
+}
+
+img{
+    vertical-align: middle;
+}
+
+article:first-child{
+    text-align: center;
+}
+
+.ratings{
+    color: hsl(301,45%,22%);
+    background: hsl(290, 30%, 96%);
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+}
+
+.ratings+.ratings{
+    margin-top: 1rem;
+}
+
+.testimonial img{
+    width:40px;
+    border-radius: 50%;
+}
+
+.ib{
+    display: inline-block;
+}
+
+.testimonial{
+    background: hsl(301,45%,22%);
+    color:white;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.testimonial div{
+    vertical-align: middle;
+    margin-left: 1rem;
+}
+
+.testimonial h2{
+    font-size: 1.2rem;
+}
+
+.testimonial h3{
+    color: hsl(333,80%,67%);
+    font-size: 1rem;
+}
+
+.testimonial+.testimonial{
+    margin-top: 1rem;
+}
+
+.testimonial p{
+    margin-top: 2rem;
+}
+
+article:nth-child(2){
+    margin-top: 3rem;
+}
+
+@media screen and (min-width:1200px) {
+    .dib{
+        display: inline-block;
+    }
+}
