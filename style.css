@@ -5,6 +5,9 @@
 body{
     margin:0;
     font-family: "League Spartan";
+    background-image: url("./images/bg-pattern-top-mobile.svg"), url("./images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 100%;
 }
 
 h1,h2,h3,p{
@@ -163,5 +166,9 @@ article:nth-child(2){
 
     .testimonial:last-child{
         transform: translateY(30px);
+    }
+
+    body{
+        background-image: url("./images/bg-pattern-top-desktop.svg"), url(./images/bg-pattern-bottom-desktop.svg);
     }
 }
