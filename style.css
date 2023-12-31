@@ -13,11 +13,14 @@ h1,h2,h3,p{
 
 main{
     padding: 5rem 1rem;
+    max-width:1200px;
+    margin: 0 auto;
 }
 
 p{
     line-height: 1.5rem;
     font-weight: 500;
+    font-size: 1.1rem;
 }
 
 h1+p{
@@ -27,6 +30,7 @@ h1+p{
 
 h1{
     font-size: 2.5rem;
+    color: hsl(301,45%,22%);
 }
 
 em{
@@ -48,7 +52,7 @@ article:first-child{
     color: hsl(301,45%,22%);
     background: hsl(290, 30%, 96%);
     border-radius: .5rem;
-    padding: 1rem 2rem;
+    padding: 1.25rem 2rem;
 }
 
 .ratings+.ratings{
@@ -97,8 +101,67 @@ article:nth-child(2){
     margin-top: 3rem;
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1190px) {
     .dib{
         display: inline-block;
+    }
+
+    article section:first-child{
+        width:36%;
+        vertical-align: middle;
+    }
+
+    article section:nth-child(2){
+        width: 36%;
+        vertical-align: middle;
+    }
+
+    article{
+        text-align-last: justify;
+    }
+
+    article >*{
+        text-align-last: initial;
+    }
+
+    h1{
+        font-size: 3.2rem;
+    }
+
+    article:first-child{
+        text-align: start;
+    }
+
+    em{
+        display: inline;
+        margin: 0 0 0 1.5rem;
+    }
+
+    article:nth-child(2){
+        margin-top: 1.5rem;
+    }
+    
+    span{
+        width:32%;
+    }
+
+    h1+p{
+        margin-bottom: 0;
+    }
+
+    .ratings:first-child{
+        transform: translateX(-100px);
+    }
+
+    .ratings:nth-child(2){
+        transform: translateX(-50px);
+    }
+
+    .testimonial:nth-child(2){
+        transform: translateY(15px);
+    }
+
+    .testimonial:last-child{
+        transform: translateY(30px);
     }
 }
